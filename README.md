@@ -49,3 +49,26 @@ The included demo dataset is synthetic for reproducibility. The Olist workflow i
 
 ## Author
 Ritesh Raj
+
+## Week 2 - Data Preprocessing
+
+Week 2 adds a reproducible preprocessing pipeline in `src/week2_preprocessing_pipeline.py`.
+
+The pipeline covers:
+- schema and data-type validation
+- timestamp parsing
+- duplicate detection
+- business-aware missing-value handling
+- delivery lead-time and delay feature engineering
+- IQR-based outlier capping
+- StandardScaler normalization
+- before/after data-quality reporting
+
+Run it after downloading the public Olist dataset and placing
+`olist_orders_dataset.csv` in `data/olist/`:
+
+```bash
+python src/week2_preprocessing_pipeline.py
+```
+
+Outputs are written to `outputs/week2/`.
