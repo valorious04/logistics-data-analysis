@@ -72,3 +72,21 @@ python src/week2_preprocessing_pipeline.py
 ```
 
 Outputs are written to `outputs/week2/`.
+
+## Week 2 - Data Preprocessing
+
+Week 2 adds a reproducible preprocessing pipeline for the Olist orders dataset. It covers:
+- data-quality profiling and missing-value analysis
+- duplicate detection and business-rule validation
+- timestamp parsing and logistics feature engineering
+- IQR-based outlier capping
+- numerical standardization with Scikit-learn StandardScaler
+- before/after data-quality reporting
+
+Run the Week 2 pipeline after placing the Olist orders CSV under `data/olist/`:
+
+```bash
+python src/week2_preprocessing_pipeline.py
+```
+
+Outputs are written to `outputs/week2/`.
